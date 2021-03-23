@@ -87,6 +87,13 @@ header {
   text-transform: uppercase;
 }
 
+@media (max-width: 575px) {
+  #logo {
+    font-size: 1.3em;
+    margin-top: 5px;
+  }
+}
+
 /*nav*/
 
 nav {
