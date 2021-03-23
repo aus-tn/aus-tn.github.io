@@ -547,6 +547,27 @@ h2.card-head-alt {
   }
 }
 
+@media (max-width: 575px) {
+  .showcase-hapothesis {
+    height: 860px;
+  }
+  .showcase-nascar {
+    height: 930px;
+  }
+  .showcase-wick {
+    height: 870px;
+  }
+  .showcase-amsi {
+    height: 780px;
+  }
+  .showcase-steeda {
+    height: 870px;
+  }
+  .showcase-lf {
+    height: 850px;
+  }
+}
+
 /*contact*/
 
 #contact-me {
