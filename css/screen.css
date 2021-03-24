@@ -265,6 +265,13 @@ h2.card-head {
   padding-left: 7px;
 }
 
+.card-left a,
+.card-left a:hover,
+.card-left a:visited,
+.card-left a:focus {
+  color: #6c6c6c;
+}
+
 .card-left h3:not(:first-of-type) {
   padding-top: 30px;
 }
