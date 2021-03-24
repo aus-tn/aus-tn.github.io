@@ -611,6 +611,7 @@ a.cert {
   text-decoration: none;
 }
 
+a.cert,
 a.cert:hover,
 a.cert:visited,
 a.cert:focus {
