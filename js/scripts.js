@@ -1,14 +1,15 @@
 $(document).ready(function () {
   //mobile nav
-  $("#mobile-nav, #main-nav a").click(function () {
+  $("#mobile-nav").click(function () {
     $("#main-nav").fadeToggle();
   });
 
-  //animations
+  //animate on scroll
   AOS.init({
     // values from 0 to 3000, with step 50ms
-    duration: 2000
+    duration: 2000,
   });
+  
   //hero
   $("#hero h1").animate(
     {
@@ -16,32 +17,27 @@ $(document).ready(function () {
     },
     2500
   );
+  
   //smooth scroll anchor links
-  var hashTagActive = "";
-  $("nav a").on("click touchstart", function (event) {
-    console.log("clicked");
-    if (hashTagActive != this.hash) {
-      //prevent several clicks
-      event.preventDefault();
-      //calculate destination place
-      var dest = 0;
-      if (
-        $(this.hash).offset().top >
-        $(document).height() - $(window).height()
-      ) {
-        dest = $(document).height() - $(window).height();
-      } else {
-        dest = $(this.hash).offset().top;
-      }
-      //go to destination
-      $("html,body").animate(
-        {
-          scrollTop: dest,
-        },
-        2000,
-        "swing"
-      );
-      hashTagActive = this.hash;
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+  });
+
+  //back to top
+  var winTop = $(document).scrollTop();
+  $(window).on( 'scroll', function(){
+    winTop = $(document).scrollTop();
+    if (winTop > 500) {
+      $('#back-to-top').fadeIn();
+    }
+    else {
+      $('#back-to-top').fadeOut();
     }
   });
+
 });

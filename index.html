@@ -10,6 +10,7 @@
     <!--css-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!--adobe fonts-->
@@ -25,11 +26,11 @@
     <script src="js/scripts.js"></script>
   </head>
 
-  <body>
+  <body id="top">
     <header class="container">
       <div id="logo">Austin Norris</div>
       <nav>
-        <img src="images/menu.png" alt="menu" id="mobile-nav" />
+        <i class="fas fa-bars" id="mobile-nav"></i>
         <div id="main-nav">
             <a href="#showcase">Showcase</a>
             <a href="#process">Process</a>
@@ -66,7 +67,7 @@
       </div>
     </section>
 
-    <section class="container" id="showcase">
+    <section class="container" id="showcase" name="showcase">
       <h1 data-aos="fade-left">Showcase</h1>
     </section>
 
@@ -659,5 +660,10 @@
       }
       form.addEventListener("submit", handleSubmit);
       </script>
+
+      <div id="back-to-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+      </div>
+
   </body>
 </html>

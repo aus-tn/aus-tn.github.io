@@ -6,6 +6,7 @@
     card
     portfolio
     contact
+    back to top
 */
 
 /*global*/
@@ -90,7 +91,7 @@ header {
 @media (max-width: 575px) {
   #logo {
     font-size: 1.3em;
-    margin-top: 5px;
+    margin-top: 7px;
   }
 }
 
@@ -101,11 +102,16 @@ nav {
   text-align: right;
 }
 
+nav i {
+  color: #fff;
+  width: 35px;
+}
+
 #mobile-nav {
   display: none;
+  font-size: 2.5em;
   margin-top: -2px;
   float: right;
-  transition: all 1s;
 }
 
 #mobile-close {
@@ -120,9 +126,14 @@ nav {
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em;
-  color: #fff;
   text-decoration: none;
   margin-left: 60px;
+}
+
+#main-nav a,
+#main-nav a:visited,
+#main-nav a:focus {
+  color: #fff;
 }
 
 nav a:hover {
@@ -160,7 +171,7 @@ nav a:hover {
 
 #hero h1 {
   color: #fff;
-  font-size: 8.375em;
+  font-size: 7em;
   font-weight: 500;
   text-align: left;
   padding-top: 240px;
@@ -197,6 +208,9 @@ nav a:hover {
   #hero h1 {
     font-size: 4em;
     margin-top: 0;
+  }
+  #hero h3 {
+    font-size: 1.5em;
   }
   #brands img {
     width: 20%;
@@ -332,6 +346,9 @@ h2.card-head-alt {
   .card-right {
     border-left: none;
     padding-left: 10px;
+  }
+  .card-right h4 {
+    padding-top: 60px;
   }
   .card-alt .card-right {
     border: none;
@@ -625,4 +642,28 @@ h2.card-head-alt {
     font-size: 1.5em;
     border: 5px solid #fff;
   }
+}
+
+/*back to top*/
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: 5px solid #6c6c6c;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  display: none;
+}
+
+#back-to-top a,
+#back-to-top a:visited,
+#back-to-top a:focus {
+  color: #6c6c6c;
+}
+
+#back-to-top:hover {
+  background-color: #343434;
+  cursor: hand;
 }
