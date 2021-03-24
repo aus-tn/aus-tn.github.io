@@ -624,9 +624,18 @@ a.cert:focus {
   margin-bottom: 400px;
 }
 
-#contact-me h3 {
+#contact-me label {
+  font-family: jaf-bernina-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.125em;
   color: #fff;
   text-transform: uppercase;
+}
+
+#contact-me label:not(:first-of-type) {
+  display: block;
+  margin-top: 120px;
 }
 
 #contact-me input,
