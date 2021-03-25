@@ -181,7 +181,7 @@ nav a:hover {
   font-family: jaf-bernina-sans, sans-serif;
   font-style: normal;
   font-weight: 500;
-  padding-top: 100px;
+  padding-top: 200px;
   color: #fff;
   margin-bottom: 0;
 }
@@ -229,6 +229,9 @@ nav a:hover {
   #hero-title h1 {
     font-size: 4em;
     margin-top: 0;
+  }
+  #hero-title p {
+    padding-top: 100px;
   }
   #brands h3 {
     font-size: 1.5em;
