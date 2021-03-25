@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
   
   //hero
-  $("#hero h1").animate(
+  $("#hero-title").animate(
     {
       opacity: 1,
     },
