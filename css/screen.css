@@ -226,12 +226,12 @@ nav a:hover {
   #brands {
     width: 100%;
   }
+  #hero-title {
+    padding-top: 120px;
+  }
   #hero-title h1 {
     font-size: 4em;
     margin-top: 0;
-  }
-  #hero-title p {
-    padding-top: 120px;
   }
   #brands h3 {
     font-size: 1.5em;
