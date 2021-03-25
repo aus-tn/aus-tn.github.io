@@ -7,7 +7,6 @@
     portfolio
     certified
     contact
-    scroll down
     back to top
 */
 
@@ -173,6 +172,7 @@ nav a:hover {
 
 #hero-title {
   opacity: 0;
+  padding-bottom: 140px;
 }
 
 #hero-title p {
@@ -191,9 +191,16 @@ nav a:hover {
   font-size: 7em;
   font-weight: 500;
   text-align: left;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+#hero-title small {
+  color: #fff;
+  padding-left: 10px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  display: block;
 }
 
 #brands h3 {
@@ -216,17 +223,14 @@ nav a:hover {
 }
 
 @media (max-width: 1000px) {
-  #hero h1 {
-    font-size: 5em;
-  }
   #brands {
     width: 100%;
   }
-  #hero h1 {
+  #hero-title h1 {
     font-size: 4em;
     margin-top: 0;
   }
-  #hero h3 {
+  #brands h3 {
     font-size: 1.5em;
   }
   #brands img {
