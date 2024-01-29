@@ -262,6 +262,10 @@ h2.card-head {
   padding-bottom: 80px;
 }
 
+.card-spacer {
+  margin-top: 250px; 
+}
+
 .card-left {
   width: 75%;
   padding-right: 100px;
