@@ -255,10 +255,6 @@ h2.card-head {
   background: #fff;
 }
 
-.card-negative-top {
-  margin-top: -110px;
-}
-
 .card-main {
   display: flex;
   flex-direction: row;
@@ -329,29 +325,12 @@ h2.card-head {
   font-style: normal;
 }
 
-.card-alt {
-  background: #343434;
-  color: #fff;
-}
-
-h2.card-head-alt {
-  font-size: 7.125em;
-  text-transform: uppercase;
-  color: #343434;
-  text-align: right;
-}
-
-.card-alt h3 {
-  color: #fff;
-}
-
-.card-alt .card-right {
+.card-right {
   border-left: 15px solid #fff;
 }
 
 @media (max-width: 1000px) {
-  h2.card-head,
-  h2.card-head-alt {
+  h2.card-head {
     font-size: 3em;
   }
   .card {
@@ -389,11 +368,7 @@ h2.card-head-alt {
 }
 
 @media (max-width: 575px) {
-  .card-negative-top {
-    margin-top: -50px;
-  }
-  h2.card-head,
-  h2.card-head-alt {
+  h2.card-head {
     font-size: 2.9em;
   }
 }
