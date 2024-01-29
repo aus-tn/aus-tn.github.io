@@ -248,6 +248,7 @@ h2.card-head {
   color: #fff;
   font-size: 7.125em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -281,6 +282,7 @@ h2.card-head {
   text-transform: uppercase;
   color: #1d1d1d;
   padding-left: 5px;
+  margin-bottom: 20px;
 }
 
 .card-left p {
