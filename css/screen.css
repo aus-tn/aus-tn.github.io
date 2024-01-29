@@ -329,10 +329,6 @@ h2.card-head {
   font-style: normal;
 }
 
-.card-right {
-  border-left: 15px solid #fff;
-}
-
 @media (max-width: 1000px) {
   h2.card-head {
     font-size: 3em;
