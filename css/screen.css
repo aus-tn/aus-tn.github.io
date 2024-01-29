@@ -252,7 +252,6 @@ h2.card-head {
 
 .card {
   background: #fff;
-  margin-top: -25px;
 }
 
 .card-negative-top {
@@ -262,8 +261,8 @@ h2.card-head {
 .card-main {
   display: flex;
   flex-direction: row;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .card-left {
