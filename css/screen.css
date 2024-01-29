@@ -388,7 +388,8 @@ h2.card-head {
 /*SHQ*/
 
 .showcase-shq {
-  height: 1300px;
+  height: 1190px;
+  margin-top: -40px;
 }
 
 .showcase-shq img:nth-of-type(2) {
