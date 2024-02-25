@@ -1,7 +1,17 @@
 $(document).ready(function () {
-  //mobile nav
-  $("#mobile-nav").click(function () {
-    $("#main-nav").fadeToggle();
+
+  //menu
+  $("#menu-btn, .toggle-menu").click(function(){
+    //top accomodation for menu
+    $("nav").toggleClass("nav-open");
+    //show menu and overlay
+    $("#menu").toggle();
+    $("#overlay").toggle();
+    //icon bars to x
+    $("#menu-btn #menu-bars").toggle();
+    $("#menu-btn #menu-x").toggle();
+    //btn default/active
+    $("#menu-btn").toggleClass("btn-active");
   });
 
   //animate on scroll
@@ -9,14 +19,6 @@ $(document).ready(function () {
     // values from 0 to 3000, with step 50ms
     duration: 2000,
   });
-  
-  //hero
-  $("#hero-title").animate(
-    {
-      opacity: 1,
-    },
-    2500
-  );
   
   //smooth scroll anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -26,18 +28,6 @@ $(document).ready(function () {
             behavior: 'smooth'
         });
     });
-  });
-
-  //back to top
-  var winTop = $(document).scrollTop();
-  $(window).on( 'scroll', function(){
-    winTop = $(document).scrollTop();
-    if (winTop > 500) {
-      $('#back-to-top').fadeIn();
-    }
-    else {
-      $('#back-to-top').fadeOut();
-    }
   });
 
 });
