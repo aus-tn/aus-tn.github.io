@@ -236,6 +236,10 @@ button:focus {
 }
 
 /*trusted by*/
+#trusted {
+  margin: 20px 0 40px 0;
+}
+
 #trusted img {
   width: auto;
   height: 75px;
