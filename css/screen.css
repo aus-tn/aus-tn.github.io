@@ -241,6 +241,7 @@ button:focus {
   height: 75px;
   float: left;
   display: inline;
+  margin-right: 20px;
 }
 
 /*case studiees*/
