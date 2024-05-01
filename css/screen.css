@@ -239,10 +239,12 @@ button:focus {
 #trusted {
   display: flex;
   flex-wrap: wrap;
+  margin: 40px 0 60px 20px;
 }
 
 #trusted h3 {
   flex-basis: 100%;
+  margin-bottom: 20px;
 }
 
 #trusted img {
