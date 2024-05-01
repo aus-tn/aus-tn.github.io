@@ -237,7 +237,12 @@ button:focus {
 
 /*trusted by*/
 #trusted {
-  margin: 20px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#trusted h3 {
+  flex-basis: 100%;
 }
 
 #trusted img {
