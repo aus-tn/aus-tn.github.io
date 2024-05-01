@@ -42,6 +42,12 @@ img {
   height: auto;
 }
 
+.alt-bg {
+  background-color: #4e4e4e;
+  padding: 40px;
+  border-radius: 10px;
+}
+
 /*typography*/
 
 h1,
@@ -53,7 +59,6 @@ h4 {
 }
 
 h1 {
-  text-align: right;
   font-weight: 100;
   /*100px*/
   font-size: 6.25rem;
@@ -225,6 +230,14 @@ button:focus {
   margin: 0;
 }
 
+/*trusted by*/
+#trusted img {
+  width: auto;
+  height: 75px;
+  float: left;
+  display: inline;
+}
+
 /*case studiees*/
 
 #cases {
@@ -240,6 +253,7 @@ button:focus {
 }
 
 .study-link article {
+  border-radius: 10px;
   width: 353px;
   height: 353px;
   position: relative;
@@ -266,6 +280,7 @@ button:focus {
 .study-link article section {
   position: absolute;
   bottom: 0px;
+  border-radius: 10px;
   padding: 120px 20px 0 20px;
   /*full width minus side padding*/
   width: calc(100% - 20px * 2);
@@ -300,7 +315,7 @@ button:focus {
 }
 
 #study h1 {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 #study article:first-of-type {
