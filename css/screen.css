@@ -121,7 +121,7 @@ ul li {
   color: var(--white);
   text-decoration: none;
   font-weight: 300;
-  background-color: var(--dark-gray);
+  background: rgba(20, 19, 19, 0.8);
 }
 
 nav {
