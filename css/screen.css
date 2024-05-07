@@ -114,9 +114,9 @@ ul li {
 /*nav*/
 
 #logo {
-  float: left;
-  margin-top: 3px;
-  padding: 2px 5px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 5px;
   font-size: 1.5em;
   color: var(--white);
   text-decoration: none;
@@ -132,6 +132,10 @@ nav {
   transform: translate(-50%, -50%);
   text-align: right;
   width: 320px;
+}
+
+nav section {
+  display: flex;
 }
 
 nav.nav-open {
