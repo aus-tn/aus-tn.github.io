@@ -323,6 +323,7 @@ button:focus {
 
 #study #hero {
   display: block;
+  margin-left: 20px;
 }
 
 #study #hero h2 {
