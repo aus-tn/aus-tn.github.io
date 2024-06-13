@@ -1,0 +1,316 @@
+/*
+vars    
+global
+typography
+nav
+hero
+case studies
+contact
+media queries
+*/
+
+/*vars*/
+:root {
+  --dark-gray: #141313;
+  --gray-transp: rgba(54, 54, 54, 0.9);
+  --white: #fff;
+  --green: #63F6C1;
+}
+
+/*global*/
+
+html,
+body {
+  background: var(--dark-gray);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 738px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*typography*/
+
+h1,
+h2,
+h3 {
+  color: var(--white);
+}
+
+h1 {
+  font-weight: 100;
+  /*64px*/
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+h2 {
+  /*32*/
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+h3,
+label {
+  /*28px*/
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  /*22px*/
+  line-height: 1.375rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration-color: var(--green);
+}
+
+strong {
+  font-weight: 600;
+}
+
+/*nav*/
+
+nav {
+  position: fixed;
+  z-index: 2;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav section {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.nav-open {
+  top: 245px;
+}
+
+#logo {
+  background-color: var(--gray-transp);
+  padding: 10 15px;
+}
+
+#logo {
+  text-decoration: none;
+}
+
+#menu {
+  display: none;
+  width: 315px;
+  float: right;
+  text-align: right;
+}
+
+#menu-x {
+  display: none;
+}
+
+#menu a {
+  margin-top: 30px;
+  display: block;
+}
+
+#links-large a {
+  display: block;
+  /*28px*/
+  font-size: 1.75rem;
+}
+
+#links-small div {
+  margin-top: 30px;
+}
+
+#links-small a {
+  display: inline;
+  /*18px*/
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+#links-small i {
+  display: inline;
+  margin-left: 5px;
+}
+
+button,
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: var(--gray-transp);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.btn-active,
+.btn:active,
+.btn:hover,
+.btn:focus,
+button:active,
+button:hover,
+button:focus {
+  cursor: pointer;
+  background-color: var(--white) !important;
+  color: var(--dark-gray) !important;
+}
+
+#overlay {
+  background: var(--dark-gray);
+  opacity: 0.85;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/*hero*/
+
+#hero {
+  display: flex;
+  margin-top: 120px;
+  padding-bottom: 60px;
+}
+
+#hero img {
+  width: 140px;
+  height: auto;
+}
+
+#hero div:nth-child(2) {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+#hero h3,
+#hero h2 {
+  margin: 0;
+}
+
+#hero h2 {
+  /*52px*/
+  font-size: 3.25rem;
+}
+
+#hero h3 i {
+  font-size: 1rem;
+}
+
+/*case studies*/
+
+article {
+ margin-top: 60px;
+ padding-bottom: 80px; 
+ background-repeat: no-repeat;
+ background-repeat: no-repeat;background-position: center;background-size: cover;
+}
+
+article img {
+  margin-top: 30px;
+}
+
+article .btn {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+article p:nth-of-type(3) {
+  margin-top: 40px;
+}
+
+article:nth-of-type(1) {
+  background-image: url('../images/cases/amsi/bg.png');
+}
+
+article:nth-of-type(2) {
+  background-image: url('../images/cases/nascar/bg.png');
+}
+
+article:nth-of-type(3) {
+  background-image: url('../images/cases/shq/bg.png');
+}
+
+article:nth-of-type(4) {
+  background-image: url('../images/cases/wick/bg.png');
+}
+
+/*get in touch*/
+#contact {
+  margin-bottom: 200px;
+}
+
+#contact h2 {
+  text-transform: none;
+  /*41.7px*/
+  line-height: 2.606rem;
+}
+
+#contact a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+/*Media Queries*/
+
+/*tablets and above*/
+@media only screen and (min-width: 700px) {
+  nav {
+    width: 700px;
+  }
+}
+
+/*below tablet, above small phones*/
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  #hero div:nth-child(2) {
+    margin-left: 20px;
+  }
+}
+
+/*small phones (iPhone SE, android*/
+@media only screen and (max-width: 321px) {
+  #hero {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+}
