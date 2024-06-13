@@ -292,22 +292,11 @@ article:nth-of-type(4) {
     margin-right: 20px;
   }
 
-  h1 {
+  #hero h1 {
     font-size: 3rem;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-/*small phones (iPhone SE, android*/
-@media only screen and (max-width: 321px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
+  #hero h2 {
     font-size: 1.5rem;
   }
 }
