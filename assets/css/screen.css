@@ -287,16 +287,12 @@ article:nth-of-type(4) {
     width: 90%;
   }
 
-  #hero {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  #hero h1 {
-    font-size: 3rem;
-  }
-
   #hero h2 {
-    font-size: 1.5rem;
+    font-size: 2rem !important;
+  }
+
+  #hero h3,
+  #hero h3 i {
+    font-size: 1.1rem !important;
   }
 }
