@@ -283,6 +283,15 @@ article:nth-of-type(4) {
 
 /*below tablet, above small phones*/
 @media only screen and (max-width: 700px) {
+  nav {
+    width: 90%;
+  }
+
+  #hero {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   h1 {
     font-size: 3rem;
   }
@@ -290,12 +299,15 @@ article:nth-of-type(4) {
   h2 {
     font-size: 1.5rem;
   }
+}
 
-  nav {
-    width: 90%;
+/*small phones (iPhone SE, android*/
+@media only screen and (max-width: 321px) {
+  h1 {
+    font-size: 3rem;
   }
 
-  #hero div:nth-child(2) {
-    margin-left: 20px;
+  h2 {
+    font-size: 1.5rem;
   }
 }
