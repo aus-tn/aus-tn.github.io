@@ -288,11 +288,14 @@ article:nth-of-type(4) {
   }
 
   #hero h2 {
-    font-size: 2rem !important;
+    font-size: 2.1rem !important;
   }
 
-  #hero h3,
-  #hero h3 i {
+  #hero h3 {
     font-size: 1.1rem !important;
+  }
+
+  #hero h3 i {
+    font-size: 0.7rem !important;
   }
 }
