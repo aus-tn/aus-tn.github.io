@@ -5,6 +5,7 @@ typography
 nav
 hero
 case studies
+accordion
 contact
 media queries
 */
@@ -40,8 +41,8 @@ img {
   height: auto;
 }
 
-.spacer {
-  margin: 40px 0;
+.spacer-top {
+  margin-top: 40px;
 }
 
 /*typography*/
@@ -240,10 +241,6 @@ article .btn {
   margin-right: 20px;
 }
 
-article p:nth-of-type(3) {
-  margin-top: 40px;
-}
-
 #amsi { background: url('../images/cases/amsi/bg.png') no-repeat;
 }
 
@@ -257,6 +254,29 @@ article p:nth-of-type(3) {
 
 #wick {
   background: url('../images/cases/wick/bg.png') no-repeat;
+}
+
+/*accordion*/
+.accordion {
+  transition: 0.4s;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  font-family: FontAwesome;
+  content: '\f078';
+  float: right;
+  margin-left: 10px;
+}
+
+.active:after {
+  font-family: FontAwesome;
+  content: '\f077';
 }
 
 /*get in touch*/
