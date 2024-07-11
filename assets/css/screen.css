@@ -40,6 +40,10 @@ img {
   height: auto;
 }
 
+.spacer {
+  margin: 40px 0;
+}
+
 /*typography*/
 
 h1,
@@ -240,20 +244,19 @@ article p:nth-of-type(3) {
   margin-top: 40px;
 }
 
-article:nth-of-type(1) {
-  background-image: url('../images/cases/amsi/bg.png');
+#amsi { background: url('../images/cases/amsi/bg.png') no-repeat;
 }
 
-article:nth-of-type(2) {
-  background-image: url('../images/cases/nascar/bg.png');
+#nascar {
+  background: url('../images/cases/nascar/bg.png') no-repeat;
 }
 
-article:nth-of-type(3) {
-  background-image: url('../images/cases/shq/bg.png');
+#spendhq {
+  background: url('../images/cases/shq/bg.png') no-repeat;
 }
 
-article:nth-of-type(4) {
-  background-image: url('../images/cases/wick/bg.png');
+#wick {
+  background: url('../images/cases/wick/bg.png') no-repeat;
 }
 
 /*get in touch*/
