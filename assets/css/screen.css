@@ -100,22 +100,8 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-nav section {
-  display: flex;
-  justify-content: space-between;
-}
-
 nav.nav-open {
   top: 245px;
-}
-
-#logo {
-  background-color: var(--gray-transp);
-  padding: 10 15px;
-}
-
-#logo {
-  text-decoration: none;
 }
 
 #menu {
@@ -123,6 +109,7 @@ nav.nav-open {
   width: 315px;
   float: right;
   text-align: right;
+  clear: both;
 }
 
 #menu-x {
@@ -132,6 +119,10 @@ nav.nav-open {
 #menu a {
   margin-top: 30px;
   display: block;
+}
+
+#menu-btn {
+  float: right;
 }
 
 #links-large a {
@@ -149,11 +140,6 @@ nav.nav-open {
   /*18px*/
   font-size: 1.15rem;
   line-height: 1.5rem;
-}
-
-#links-small i {
-  display: inline;
-  margin-left: 5px;
 }
 
 button,
