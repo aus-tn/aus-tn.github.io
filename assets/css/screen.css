@@ -243,6 +243,25 @@ article .btn {
 }
 
 /*accordion*/
+
+.collapse {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--white);
+}
+
+.collapse .btn {
+  width: 100%;
+  background: none !important;
+  padding: 0;
+  font-weight: bolder;
+}
+
+.collapse .btn,
+.collapse .btn:active,
+.collapse .btn:hover {
+  color:var(--white) !important;
+}
+
 .accordion {
   transition: 0.4s;
 }
