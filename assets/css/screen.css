@@ -214,8 +214,7 @@ button:focus {
 article {
  margin-top: 60px;
  padding-bottom: 80px; 
- background-repeat: no-repeat;
- background-repeat: no-repeat;background-position: center;background-size: cover;
+ background-position: center;background-size: cover;
 }
 
 article img {
@@ -227,39 +226,41 @@ article .btn {
   margin-right: 20px;
 }
 
-#amsi { background: url('../images/cases/amsi/bg.png') no-repeat;
+#amsi { background-image: url('../images/cases/amsi/bg.png');
 }
 
 #nascar {
-  background: url('../images/cases/nascar/bg.png') no-repeat;
+  background-image: url('../images/cases/nascar/bg.png');
 }
 
 #spendhq {
-  background: url('../images/cases/shq/bg.png') no-repeat;
+  background-image: url('../images/cases/shq/bg.png');
 }
 
 #wick {
-  background: url('../images/cases/wick/bg.png') no-repeat;
+  background-image: url('../images/cases/wick/bg.png');
 }
 
 /*accordion*/
 
 .collapse {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
   border-bottom: 1px solid var(--white);
 }
 
-.collapse .btn {
+.collapse a.accordion {
   width: 100%;
-  background: none !important;
+  background: none;
   padding: 0;
   font-weight: bolder;
 }
 
-.collapse .btn,
-.collapse .btn:active,
-.collapse .btn:hover {
-  color:var(--white) !important;
+.collapse a.accordion,
+.collapse a.accordion:active,
+.collapse a.accordion:hover {
+  color:var(--white);
+  text-decoration: none;
 }
 
 .accordion {
@@ -270,6 +271,10 @@ article .btn {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+  margin-top: 0;
 }
 
 .accordion:after {
