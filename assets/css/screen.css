@@ -262,6 +262,7 @@ ul.accomplish li::before {
   content: '✔';
   position: absolute;
   left: 0;
+  color: var(--white);
 }
 
 
@@ -368,5 +369,9 @@ ul li {
 
   #hero h3 i {
     font-size: 0.7rem !important;
+  }
+
+  #hero div:nth-child(2) {
+    margin-top: 0;
   }
 }
