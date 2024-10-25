@@ -230,7 +230,7 @@ button:focus {
 
 article {
  margin-top: 60px;
- padding-bottom: 80px; 
+ padding-bottom: 60px; 
  background-position: center;background-size: cover;
 }
 
@@ -267,6 +267,7 @@ ul.accomplish li::before {
   position: absolute;
   left: 0;
   color: var(--white);
+  font-family: sans-serif; /*for correct rendering in mobile*/
 }
 
 
