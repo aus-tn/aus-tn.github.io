@@ -193,19 +193,23 @@ button:focus {
 /*hero*/
 
 #hero {
-  display: flex;
   margin-top: 120px;
   padding-bottom: 60px;
+  font-size: 0; /*prevent shitespace affecting vertical alignment*/
+}
+
+#hero div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#hero div:nth-child(2) {
+  margin-left: 20px;
 }
 
 #hero img {
   width: 140px;
   height: auto;
-}
-
-#hero div:nth-child(2) {
-  margin-top: 10px;
-  margin-left: 40px;
 }
 
 #hero h3,
@@ -371,7 +375,12 @@ ul li {
     font-size: 0.7rem !important;
   }
 
+  #hero div {
+    display: block;
+    text-align: center;
+  }
+
   #hero div:nth-child(2) {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
