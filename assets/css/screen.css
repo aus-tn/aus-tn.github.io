@@ -257,19 +257,8 @@ ol li {
 }
 
 ul.accomplish li {
-  list-style-type: none;
-  position: relative;
-  padding-left: 20px;
+  margin-left: 20px;
 }
-
-ul.accomplish li::before {
-  content: '✔';
-  position: absolute;
-  left: 0;
-  color: var(--white);
-  font-family: sans-serif; /*for correct rendering in mobile*/
-}
-
 
 ul {
   margin-top: 10px;
