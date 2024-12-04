@@ -350,22 +350,23 @@ ul li {
   }
 }
 
-/*below tablet, above small phones*/
+/*below tablet*/
 @media only screen and (max-width: 700px) {
   nav {
     width: 90%;
   }
 
   #hero h2 {
-    font-size: 2rem !important;
+    font-size: 2rem;
+    margin: 10px 0;
   }
 
   #hero h3 {
-    font-size: 1.1rem !important;
+    font-size: 1.1rem;
   }
 
   #hero h3 i {
-    font-size: 0.7rem !important;
+    font-size: 0.7rem;
   }
 
   #hero div {
