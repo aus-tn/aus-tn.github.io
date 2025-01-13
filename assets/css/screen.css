@@ -37,8 +37,7 @@ body {
 }
 
 .content-contain {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: auto 10px;
 }
 
 .content-contain img {
@@ -300,7 +299,7 @@ ul li {
 }
 
 .accordion.btn {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .panel {
