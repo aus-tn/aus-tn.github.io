@@ -416,6 +416,6 @@ ul li {
 
   #about div {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
   }
 }
