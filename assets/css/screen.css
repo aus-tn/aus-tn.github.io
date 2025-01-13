@@ -361,10 +361,9 @@ ul li {
   margin-bottom: 200px;
 }
 
-#contact h2 {
-  text-transform: none;
-  /*41.7px*/
-  line-height: 2.606rem;
+#contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 #contact a {
