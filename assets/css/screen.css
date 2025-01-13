@@ -413,4 +413,9 @@ ul li {
   #about {
     text-align: center;
   }
+
+  #about div {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
