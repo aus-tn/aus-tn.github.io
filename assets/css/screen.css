@@ -4,7 +4,7 @@ global
 typography
 nav
 hero
-brands
+about
 case studies
 accordion
 contact
@@ -15,6 +15,7 @@ media queries
 :root {
   --dark-gray: #141313;
   --gray-transp: rgba(54, 54, 54, 0.9);
+  --gray: #222;
   --white: #fff;
   --green: #63F6C1;
 }
@@ -89,8 +90,7 @@ label {
 }
 
 p {
-  /*22px*/
-  line-height: 1.375rem;
+  line-height: 1.7rem;
 }
 
 a {
@@ -196,7 +196,7 @@ button:focus {
 
 #hero {
   margin-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   font-size: 0; /*prevent shitespace affecting vertical alignment*/
 }
 
@@ -232,38 +232,41 @@ button:focus {
 #about {
   font-size: 1.2rem;
   line-height: 1.5em;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
-#about div {
+#brands {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 80px;
+  gap: 40px;
+  background-color: var(--gray);
 }
 
-#about h3:first-of-type {
-  margin-top: 0px;
-}
-
-#about h3 {
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
-#about div img {
-  width: 70px;
+#brands img {
+  width: 80px;
   height: auto;
 }
 
-#about div a:nth-child(4) img {
+#brands #nascar {
   width: 100px;
+}
+
+#brands #porsche {
+  width: 55px;
 }
 
 /*case studies*/
 
 #cases h1.container {
   padding-bottom: 0px;
+}
+
+#cases article:first-of-type {
+  margin-top: 0;
 }
 
 article {
@@ -294,16 +297,14 @@ ol li {
   padding-left: 0;
 }
 
-ul.accomplish li {
-  margin-left: 20px;
-}
-
 ul {
   margin-top: 10px;
 }
 
 ul li {
   margin-bottom: 10px;
+  margin-left: 20px;
+  line-height: 1.4rem;
 }
 
 /*backgrounds*/
