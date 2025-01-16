@@ -233,6 +233,7 @@ button:focus {
   font-size: 1.2rem;
   line-height: 1.5em;
   padding-top: 0;
+  margin-bottom: 60px;
 }
 
 #brands {
@@ -418,8 +419,4 @@ ul li {
     text-align: center;
   }
 
-  #about div {
-    flex-direction: column;
-    gap: 40px;
-  }
 }
