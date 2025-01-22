@@ -69,24 +69,6 @@ img + span {
   flex-wrap: wrap;
 }
 
-.btns a {
-  display: inline-block;
-  padding: 20px;
-  text-decoration: none;
-  background: var(--gray);
-  border-radius: 20px;
-  text-wrap: nowrap;
-}
-
-.btns a:hover {
-  background: var(--green);
-  color: var(--dark-gray);
-}
-
-.btns i {
-  margin-right: 10px;
-}
-
 /*typography*/
 
 h1,
@@ -245,7 +227,8 @@ button:focus {
 }
 
 #about p {
-  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 #brands {
@@ -263,7 +246,7 @@ button:focus {
 
 #cta {
   gap: 30px;
-  margin: 30px auto 60px auto;
+  margin: 0 auto 60px auto;
   justify-content: left;
 }
 
@@ -280,7 +263,8 @@ button:focus {
 article {
  margin-top: 60px;
  padding-bottom: 60px; 
- background-position: center;background-size: cover;
+ background-position: center;
+ background-size: cover;
 }
 
 article img {
