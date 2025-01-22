@@ -5,7 +5,9 @@ typography
 nav
 hero
 about
+CTAs
 case studies
+process
 contact
 media queries
 */
@@ -17,6 +19,7 @@ media queries
   --gray: #222;
   --white: #fff;
   --green: #63F6C1;
+  --blue: hsl(206, 54%, 31%);
 }
 
 /*global*/
@@ -58,6 +61,32 @@ img + span {
   font-style: italic;
 }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btns a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  background: var(--gray);
+  border-radius: 20px;
+  text-wrap: nowrap;
+}
+
+.btns a:hover {
+  background: var(--green);
+  color: var(--dark-gray);
+}
+
+.btns i {
+  margin-right: 10px;
+}
+
 /*typography*/
 
 h1,
@@ -68,10 +97,9 @@ h3 {
 
 h1 {
   font-weight: 100;
-  /*64px*/
   font-size: 4rem;
   font-weight: 100;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -93,8 +121,9 @@ p {
 }
 
 a {
-  color: var(--green);
-  text-decoration: none;
+  color: var(--white);
+  text-decoration-color: var(--green);
+  text-decoration: underline;
 }
 
 strong {
@@ -112,7 +141,7 @@ nav {
 }
 
 nav.nav-open {
-  top: 249px;
+  top: 164px;
 }
 
 #menu {
@@ -130,30 +159,11 @@ nav.nav-open {
 #menu a {
   margin-top: 30px;
   display: block;
-  color: var(--white);
-  text-decoration-color: var(--green);
-  text-decoration: underline;
+  font-size: 1.75rem;
 }
 
 #menu-btn {
   float: right;
-}
-
-#links-large a {
-  display: block;
-  /*28px*/
-  font-size: 1.75rem;
-}
-
-#links-small div {
-  margin-top: 30px;
-}
-
-#links-small a {
-  display: inline;
-  /*18px*/
-  font-size: 1.15rem;
-  line-height: 1.5rem;
 }
 
 button,
@@ -231,18 +241,16 @@ button:focus {
 #about {
   font-size: 1.2rem;
   line-height: 1.5em;
-  padding-top: 0;
-  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+#about p {
+  margin-bottom: 0px;
 }
 
 #brands {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px 80px;
-  gap: 40px;
+  padding: 60px 80px;
+  gap: 60px;
   background-color: var(--gray);
 }
 
@@ -257,6 +265,14 @@ button:focus {
 
 #brands #porsche {
   width: 55px;
+}
+
+/*CTAS*/
+
+#cta {
+  gap: 30px;
+  margin: 30px auto 60px auto;
+  justify-content: left;
 }
 
 /*case studies*/
@@ -361,19 +377,63 @@ ul li {
   content: '\f077';
 }
 
-/*get in touch*/
+/*process*/
+
+#process #steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#process #steps div:not(.skills) {
+  padding: 20px;
+  background-color: var(--gray);
+  border-radius: 20px;
+  max-width: 310px;
+}
+
+#process h2 {
+  width: 100%;
+  margin-top: 0;
+}
+
+#process h2 span {
+  float: right;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#process .skills {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+
+#process .skills span {
+  padding: 10px 15px;
+  background-color: var(--gray-transp);
+  border-radius: 10px;
+  display:inline-block;
+}
+
+#process .skills span.tool {
+  background-color: var(--blue);
+}
+
+/*contact*/
+
 #contact {
   margin-bottom: 200px;
 }
 
-#contact p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+#contact .flex {
+  gap: 30px;
+  justify-content: left;
+  margin-top: 30px;
 }
 
-#contact a {
-  color: var(--green);
-  text-decoration: none;
+#contact p {
+  margin-top: 0;
 }
 
 /*Media Queries*/
@@ -392,16 +452,12 @@ ul li {
   }
 
   #hero h2 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     margin: 10px 0;
   }
 
   #hero h3 {
     font-size: 1.1rem;
-  }
-
-  #hero h3 i {
-    font-size: 0.7rem;
   }
 
   #hero div {
@@ -416,6 +472,14 @@ ul li {
 
   #about {
     text-align: center;
+  }
+
+  #cta, #process #steps {
+    justify-content: center;
+  }
+
+  #process #steps div:not(.skills) {
+    max-width: none !important;
   }
 
 }
