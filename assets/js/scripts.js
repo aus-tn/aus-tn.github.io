@@ -39,4 +39,15 @@ $(document).ready(function () {
     });
   }
 
+  //remove focus on .btns after click on mobile
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function () {
+        this.blur(); // Remove focus state
+      });
+    });
+  });
+
 });
