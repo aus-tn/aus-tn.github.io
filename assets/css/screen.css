@@ -108,6 +108,10 @@ a {
   text-decoration: underline;
 }
 
+i {
+  margin-right: 10px;
+}
+
 strong {
   font-weight: 600;
 }
