@@ -8,6 +8,11 @@ about
 CTAs
 case studies
 process
+references
+kpi
+why me
+tiers
+why ux
 contact
 media queries
 */
@@ -53,9 +58,9 @@ img {
   height: auto;
 }
 
-img + span {
+img+span {
   display: block;
-  margin-top:10px;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-size: 0.9rem;
   font-style: italic;
@@ -67,6 +72,20 @@ img + span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  background-color: var(--gray);
+  border-radius: 20px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 /*typography*/
@@ -94,7 +113,7 @@ h3,
 label {
   /*28px*/
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: 20px;
 }
 
@@ -119,37 +138,60 @@ strong {
 /*nav*/
 
 nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: fixed;
-  z-index: 2;
-  top: 40px;
+  z-index: 4;
+  width: 720px;
+  top: 4.7vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
 }
 
-nav.nav-open {
-  top: 164px;
+nav section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#logo {
+  float: left;
+  padding-top: 6px;
+  font-size: 1.4rem;
+  text-shadow: var(--dark-gray) 2px 2px 2px;
 }
 
 #menu {
   display: none;
-  width: 315px;
-  float: right;
   text-align: right;
-  clear: both;
+  margin-top: 20px;
 }
 
-#menu-x {
-  display: none;
+#work-with {
+  background-color: var(--blue);
+  margin-right: 10px;
 }
 
 #menu a {
-  margin-top: 30px;
+  margin-bottom: 20px;
   display: block;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
 }
 
 #menu-btn {
-  float: right;
+  padding: 12px 14px;
+}
+
+#menu-btn i {
+  margin-right: 0;
+}
+
+#menu-btn .fa-xmark {
+  display: none;
 }
 
 button,
@@ -181,7 +223,7 @@ button:focus {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   display: none;
@@ -192,12 +234,15 @@ button:focus {
 #hero {
   margin-top: 120px;
   padding-bottom: 20px;
-  font-size: 0; /*prevent shitespace affecting vertical alignment*/
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center contents vertically if needed */
+  font-size: 0; /* Prevent whitespace affecting vertical alignment */
 }
 
-#hero div {
-    display: inline-block;
-    vertical-align: middle;
+#hero img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #hero div:nth-child(2) {
@@ -219,15 +264,11 @@ button:focus {
   font-size: 2.7rem;
 }
 
-#hero h3 i {
-  font-size: 1rem;
-}
-
 /*about*/
 #about {
-  font-size: 1.2rem;
   line-height: 1.5em;
   padding: 0 20px;
+  text-align: center;
 }
 
 #about p {
@@ -251,7 +292,7 @@ button:focus {
 #cta {
   gap: 30px;
   margin: 0 auto 60px auto;
-  justify-content: left;
+  justify-content: center;
 }
 
 /*case studies*/
@@ -265,10 +306,10 @@ button:focus {
 }
 
 article {
- margin-top: 60px;
- padding-bottom: 60px; 
- background-position: center;
- background-size: cover;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  background-position: center;
+  background-size: cover;
 }
 
 article img {
@@ -304,7 +345,8 @@ ul li {
 }
 
 /*backgrounds*/
-#amsi { background-image: url('../images/cases/amsi/bg.png');
+#amsi {
+  background-image: url('../images/cases/amsi/bg.png');
 }
 
 #nascar {
@@ -359,19 +401,6 @@ ul li {
 
 /*process*/
 
-#process #steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-#process #steps div:not(.skills) {
-  padding: 20px;
-  background-color: var(--gray);
-  border-radius: 20px;
-  max-width: 310px;
-}
-
 #process h2 {
   width: 100%;
   margin-top: 0;
@@ -384,31 +413,206 @@ ul li {
 }
 
 #process .skills {
- display: flex;
- flex-wrap: wrap;
- gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #process .skills span {
   padding: 10px 15px;
   background-color: var(--gray-transp);
   border-radius: 10px;
-  display:inline-block;
+  display: inline-block;
 }
 
 #process .skills span.tool {
   background-color: var(--blue);
 }
 
+/*references*/
+
+#references .card {
+  position: relative;
+  height: 321px;
+  overflow: hidden;
+  background-size: cover;
+}
+
+/*bg image overlay*/
+#references .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+#references a {
+  text-decoration: none;
+}
+
+#references .card h2 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#references .card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+#references .card div, i {
+  z-index: 2;
+}
+
+#references div:nth-child(1) p {
+  margin-top: 0;
+}
+
+#references .card div:nth-child(1) {
+  position: absolute; 
+  top: 20px;
+  left: 20px;
+}
+
+#references .card div:nth-child(2) {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#references .card div:nth-child(2) p {
+  margin: 0;
+}
+
+#references .card div:nth-child(2) p:nth-child(1) {
+  font-weight: 100;
+}
+
+#references .card i {
+  position: absolute;
+  right: 20px;
+  bottom: 26px;
+  font-size: 1.5rem;
+}
+
+#narain {
+  background-image: url('../images/references/narain.jpg');
+}
+
+#justyn {
+  background-image: url('../images/references/justyn.jpg');
+}
+
+#diane {
+  background-image: url('../images/references/diane.jpg');
+}
+
+#randi {
+  background-image: url('../images/references/randi.jpg');
+}
+
+/*kpi*/
+
+.kpi {
+  padding: 80px 0;
+}
+
+.kpi .container {
+  padding: 0 30px;
+}
+
+.kpi .container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.kpi .flex {
+  text-align: center;
+}
+
+.kpi .flex div {
+  width: 200px;
+}
+
+.kpi .flex h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.kpi .flex p {
+  margin: 0;
+}
+
+.kpi .flex p:nth-of-type(1) {
+  font-weight: 200;
+}
+
+.kpi .flex p:nth-of-type(2) {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+/*why me*/
+#why-me.kpi {
+  padding-top: 40px
+}
+
+/*tiers*/
+#tiers {
+  margin-bottom: 80px;
+}
+
+#tiers h2 {
+  margin: 0;
+}
+
+#tiers h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#tiers p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#tiers ul {
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+#tiers ul li {
+  margin-bottom: 2px;
+}
+
+#tiers a {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/*why ux*/
+#why-ux {
+  background-color: var(--gray); 
+}
+
 /*contact*/
 
 #contact {
+  margin-top: 20px;
   margin-bottom: 200px;
+  text-align: center;
 }
 
 #contact .flex {
   gap: 30px;
-  justify-content: left;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -420,29 +624,30 @@ ul li {
 
 /*tablets and above*/
 @media only screen and (min-width: 700px) {
-  nav {
-    width: 700px;
-  }
+
 }
 
 /*below tablet*/
 @media only screen and (max-width: 700px) {
   nav {
     width: 90%;
+}
+
+  #hero {
+    flex-direction: column;
+  }
+
+  #hero div {
+    text-align: center;
   }
 
   #hero h2 {
     font-size: 2.5rem;
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   #hero h3 {
-    font-size: 1.1rem;
-  }
-
-  #hero div {
-    display: block;
-    text-align: center;
+    font-size: 1.2rem;
   }
 
   #hero div:nth-child(2) {
@@ -450,16 +655,18 @@ ul li {
     margin-left: 0;
   }
 
-  #about {
-    text-align: center;
-  }
-
-  #cta, #process #steps {
+  #cta,
+  .card-container{
     justify-content: center;
   }
 
-  #process #steps div:not(.skills) {
+  .card-container .card {
     max-width: none !important;
+    width: 100% !important;
+  }
+
+  #references .card {
+    background-position: center;
   }
 
 }

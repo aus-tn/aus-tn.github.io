@@ -1,17 +1,26 @@
 $(document).ready(function () {
 
-  //menu
-  $("#menu-btn, .toggle-menu").click(function () {
-    //top accomodation for menu
-    $("nav").toggleClass("nav-open");
+  //menu toggle
+  $("#menu-btn").click(function () {
     //show menu and overlay
     $("#menu").toggle();
     $("#overlay").toggle();
     //icon bars to x
-    $("#menu-btn #menu-bars").toggle();
-    $("#menu-btn #menu-x").toggle();
+    $("#menu-btn .fa-bars").toggle();
+    $("#menu-btn .fa-xmark").toggle();
     //btn default/active
     $("#menu-btn").toggleClass("btn-active");
+  });
+
+  // Hide menu and overlay when a link inside #menu is clicked
+  $("#menu a").click(function () {
+    $("#menu").hide();
+    $("#overlay").hide();
+    // Reset icon bars to default state
+    $("#menu-btn .fa-bars").show();
+    $("#menu-btn .fa-xmark").hide();
+    // Remove active class from button
+    $("#menu-btn").removeClass("btn-active");
   });
 
   //smooth scroll anchor links
