@@ -165,6 +165,10 @@ nav section {
   text-shadow: var(--dark-gray) 2px 2px 2px;
 }
 
+#logo a {
+  text-decoration: none;
+}
+
 #menu {
   display: none;
   text-align: right;
