@@ -640,6 +640,10 @@ i {
   text-align: center;
 }
 
+#contract-hero h1 {
+  margin-top: 120px;
+}
+
 #contract {
   height: 400px;
   overflow-y: scroll;
