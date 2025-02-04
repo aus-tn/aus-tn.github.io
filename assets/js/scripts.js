@@ -60,36 +60,27 @@ $(document).ready(function () {
 
   //Contract
   $(document).ready(function () {
-
-    // Get the current page URL
-    const currentPage = window.location.pathname.split("/").pop();
-
-    // Run this script only if the user is on contract.html
-    if (currentPage === "contract.html") {
-
-      // Function to get a query parameter from the URL
-      function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-      }
-
-      //Show buttons and populate links when terms agreed to
-      $("#agree").change(function () {
-        if ($(this).is(":checked")) {
-          const stripeLink = getQueryParam("stripe");
-          if (stripeLink) {
-            console.log("stripe link" + stripeLink);
-            //populate payment link and unhide
-            $("#payment-link").attr("href", stripeLink);
-          }
-          $("#download-link, #payment-link").removeClass("hide");
-        } else {
-          // If unchecked, hide both the download and payment buttons
-          $("#download-link, #payment-link").addClass("hide");
-        }
-      });
-
+    // Function to get a query parameter from the URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
     }
+
+    //Show buttons and populate links when terms agreed to
+    $("#agree").change(function () {
+      if ($(this).is(":checked")) {
+        const stripeLink = getQueryParam("stripe");
+        if (stripeLink) {
+          console.log("stripe link" + stripeLink);
+          //populate payment link and unhide
+          $("#payment-link").attr("href", stripeLink);
+        }
+        $("#download-link, #payment-link").removeClass("hide");
+      } else {
+        // If unchecked, hide both the download and payment buttons
+        $("#download-link, #payment-link").addClass("hide");
+      }
+    });
   });
 
 });
