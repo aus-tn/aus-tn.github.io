@@ -651,13 +651,12 @@ i {
   margin-top: 0;
 }
 
-/*force scrollbar to show on load*/
-::-webkit-scrollbar {
+#contract ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+#contract ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: var(--white);
 }
