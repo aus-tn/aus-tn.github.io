@@ -14,6 +14,7 @@ why me
 tiers
 why ux
 contact
+contract
 media queries
 */
 
@@ -88,6 +89,14 @@ img+span {
   gap: 15px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.hide {
+  display: none !important;
+}
+
 /*typography*/
 
 h1,
@@ -109,8 +118,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-h3,
-label {
+h3 {
   /*28px*/
   font-size: 1.75rem;
   font-weight: 200;
@@ -240,8 +248,10 @@ button:focus {
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center contents vertically if needed */
-  font-size: 0; /* Prevent whitespace affecting vertical alignment */
+  align-items: center;
+  /* Center contents vertically if needed */
+  font-size: 0;
+  /* Prevent whitespace affecting vertical alignment */
 }
 
 #hero img {
@@ -470,7 +480,8 @@ ul li {
   margin-bottom: 0;
 }
 
-#references .card div, i {
+#references .card div,
+i {
   z-index: 2;
 }
 
@@ -479,7 +490,7 @@ ul li {
 }
 
 #references .card div:nth-child(1) {
-  position: absolute; 
+  position: absolute;
   top: 20px;
   left: 20px;
 }
@@ -603,7 +614,7 @@ ul li {
 
 /*why ux*/
 #why-ux {
-  background-color: var(--gray); 
+  background-color: var(--gray);
 }
 
 /*contact*/
@@ -624,18 +635,43 @@ ul li {
   margin-top: 0;
 }
 
+/*contract*/
+#contract-hero {
+  text-align: center;
+}
+
+#contract {
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  border: 3px solid var(--gray);
+}
+
+#contract h4:first-of-type {
+  margin-top: 0;
+}
+
+/*force scrollbar to show on load*/
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
 /*Media Queries*/
 
 /*tablets and above*/
-@media only screen and (min-width: 700px) {
-
-}
+@media only screen and (min-width: 700px) {}
 
 /*below tablet*/
 @media only screen and (max-width: 700px) {
   nav {
     width: 90%;
-}
+  }
 
   #hero {
     flex-direction: column;
@@ -660,7 +696,7 @@ ul li {
   }
 
   #cta,
-  .card-container{
+  .card-container {
     justify-content: center;
   }
 
