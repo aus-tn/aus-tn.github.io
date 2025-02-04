@@ -66,21 +66,26 @@ $(document).ready(function () {
       return urlParams.get(param);
     }
 
-    //Show buttons and populate links when terms agreed to
-    $("#agree").change(function () {
-      if ($(this).is(":checked")) {
-        const stripeLink = getQueryParam("stripe");
-        if (stripeLink) {
-          console.log("stripe link" + stripeLink);
-          //populate payment link and unhide
-          $("#payment-link").attr("href", stripeLink);
+    //handle stripe param
+    const stripeLink = getQueryParam("stripe");
+    if (stripeLink) {
+      //populate payment link if it's there
+      $("#payment-link").attr("href", stripeLink);
+      //if agree checked show buttons, otherwise hide
+      $("#agree").change(function () {
+        if ($(this).is(":checked")) {
+          $("#download-link, #payment-link").removeClass("hide");
+        } else {
+          $("#download-link, #payment-link").addClass("hide");
         }
-        $("#download-link, #payment-link").removeClass("hide");
-      } else {
-        // If unchecked, hide both the download and payment buttons
-        $("#download-link, #payment-link").addClass("hide");
-      }
-    });
+      });
+    } 
+    //throw error, and hide buttons and agree if there's no stripe param
+    else {
+      $("#contract-error").removeClass("hide").html("<a href='work-with-me.html' class='btn'>Please Re-select Your Tier</a>");
+      $("#agree").parent().addClass("hide");
+    }
+
   });
 
 });
