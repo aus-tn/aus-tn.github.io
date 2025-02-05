@@ -63,11 +63,11 @@ $(document).ready(function () {
     // Function to get a query parameter from the URL
     function getQueryParam(param) {
       const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
+    return urlParams.get(param);
     }
 
     //handle stripe param
-    const stripeLink = getQueryParam("stripe");
+    var stripeLink = getQueryParam('stripe');
     if (stripeLink) {
       //populate payment link if it's there
       $("#payment-link").attr("href", stripeLink);
