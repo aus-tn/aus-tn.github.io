@@ -638,6 +638,7 @@ i {
 /*contract*/
 #contract-hero h1 {
   margin-top: 120px;
+  margin-bottom: 10px;
 }
 
 #contract {
