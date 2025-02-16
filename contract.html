@@ -65,9 +65,8 @@
         </nav>
         <section id="overlay">&nbsp;</section>
 
-        <section class="container" id="contract-hero">
+        <section class="container text-center" id="contract-hero">
             <h1>Service Agreement</h1>
-            <p>By filling out this form and clicking "Generate & Continue," you agree to the terms and conditions.</p>
         </section>
 
         <section class="container" id="contract">
@@ -147,12 +146,12 @@
 
             <label><input type="checkbox" id="agree"> I accept the terms and conditions.</label>
 
-            <p id="contract-btns">
+            <div class="flex" id="contract-btns">
                 <a href="assets/pdf/austintnorris-ux-ui-terms-of-service.pdf" target="_blank" class="btn hide"
                     id="download-link">Download Contract</a>
-
+                <!--href blank so js can populate with stripe link-->
                 <a href="" id="payment-link" class="btn hide" target="_blank">Continue to Payment</a>
-            </p>
+            </div>
 
         </section>
 
