@@ -71,19 +71,11 @@ $(document).ready(function () {
     if (stripeLink) {
       //populate payment link if it's there
       $("#payment-link").attr("href", stripeLink);
-      //if agree checked show buttons, otherwise hide
-      $("#agree").change(function () {
-        if ($(this).is(":checked")) {
-          $("#download-link, #payment-link").removeClass("hide");
-        } else {
-          $("#download-link, #payment-link").addClass("hide");
-        }
-      });
     } 
     //throw error, and hide buttons and agree if there's no stripe param
     else {
       $("#contract-error").removeClass("hide").html("<a href='work-with-me.html' class='btn'>Please Re-select Your Tier</a>");
-      $("#agree").parent().addClass("hide");
+      $("#contract-btns").hide();
     }
 
   });
