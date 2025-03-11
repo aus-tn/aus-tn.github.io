@@ -727,7 +727,7 @@ i {
   }
 
   h1 {
-    font-size: 3.7rem;
+    font-size: 3.6rem;
   }
 
   #hero {
@@ -764,6 +764,10 @@ i {
 
   #brands {
     padding: 60px 10%;
+  }
+
+  #cases article .container {
+    padding-top: 40px;
   }
 
   #references .card {
