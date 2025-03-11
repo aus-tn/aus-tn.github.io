@@ -9,6 +9,7 @@ about
 CTAs
 case studies
 process
+photography
 references
 kpi
 why me
@@ -336,6 +337,10 @@ button:focus {
   margin-top: 0;
 }
 
+#cases article .container {
+  padding-top: 60px;
+}
+
 article {
   margin-top: 60px;
   padding-bottom: 60px;
@@ -463,6 +468,11 @@ ul li {
 
 #process .skills span.tool {
   background-color: var(--blue);
+}
+
+/*photography*/
+#photography {
+  padding-top: 20px;
 }
 
 /*references*/
