@@ -677,6 +677,7 @@ i {
   border-radius: 5px;
   border: 3px solid var(--gray);
   flex-grow: 1;
+  padding-top: 20px;
 }
 
 #contract h4:first-of-type {
