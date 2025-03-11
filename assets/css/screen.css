@@ -716,6 +716,10 @@ i {
     width: 90%;
   }
 
+  h1 {
+    font-size: 3.7rem;
+  }
+
   #hero {
     flex-direction: column;
   }
