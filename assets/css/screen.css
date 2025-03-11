@@ -323,6 +323,7 @@ button:focus {
   gap: 30px;
   margin: 0 auto 60px auto;
   justify-content: center;
+  padding-top: 20px;
 }
 
 /*case studies*/
