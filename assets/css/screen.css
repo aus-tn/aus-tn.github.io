@@ -43,7 +43,7 @@ body {
   max-width: 738px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 80px 20px 20px 20px;
 }
 
 .content-contain {
@@ -109,7 +109,7 @@ h1 {
   font-weight: 100;
   font-size: 4rem;
   font-weight: 100;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 h2 {
@@ -288,6 +288,7 @@ button:focus {
 #about p {
   margin-top: 0px;
   margin-bottom: 10px;
+  padding: 0 10px;
 }
 
 #brands {
@@ -430,13 +431,13 @@ ul li {
 #process .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 #process .skills span {
   padding: 10px 15px;
   background-color: var(--gray-transp);
-  border-radius: 10px;
+  border-radius: 20px;
   display: inline-block;
 }
 
