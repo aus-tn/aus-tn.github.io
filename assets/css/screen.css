@@ -3,6 +3,7 @@ vars
 global
 typography
 nav
+home
 hero
 about
 CTAs
@@ -97,6 +98,12 @@ img+span {
   display: none !important;
 }
 
+.photography-bg {
+  background-image: url('../images/me-photography.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 /*typography*/
 
 h1,
@@ -180,7 +187,7 @@ nav section {
 #menu {
   display: none;
   text-align: right;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #work-with {
@@ -189,7 +196,7 @@ nav section {
 }
 
 #menu a {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: block;
   font-size: 1.4rem;
 }
@@ -239,6 +246,13 @@ button:focus {
   top: 0;
   left: 0;
   display: none;
+}
+
+/*home*/
+#home {
+  background-image: url('../images/me-lightner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 /*hero*/
@@ -417,6 +431,11 @@ ul li {
 
 /*process*/
 
+#process {
+  margin-bottom: 80px;
+  padding-top: 60px;
+}
+
 #process h2 {
   width: 100%;
   margin-top: 0;
@@ -583,6 +602,7 @@ i {
 /*tiers*/
 #tiers {
   margin-bottom: 80px;
+  padding-top: 0;
 }
 
 #tiers h2 {
