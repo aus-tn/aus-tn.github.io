@@ -306,7 +306,7 @@ button:focus {
 }
 
 #brands {
-  padding: 60px 80px;
+  padding: 60px 20%;
   gap: 60px;
   background-color: var(--gray);
 }
@@ -745,6 +745,10 @@ i {
   .card-container .card {
     max-width: none !important;
     width: 100% !important;
+  }
+
+  #brands {
+    padding: 60px 10%;
   }
 
   #references .card {
